@@ -15,3 +15,5 @@ qi_use_lib(sqlite3 PTHREAD)
 if(UNIX AND NOT APPLE)
   qi_use_lib(sqlite3 DL)
 endif()
+
+qi_stage_lib(sqlite3)
