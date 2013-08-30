@@ -2,6 +2,14 @@ cmake_minimum_required(VERSION 2.8)
 project(sqlite)
 find_package(qibuild)
 
+option("WITH_SYSTEM_SQLITE"
+  "Set this if you have sqlite installed with rtree support"
+  OFF)
+
+if(WITH_SYSTEM_SQLITE)
+  return()
+endif()
+
 add_definitions("-DSQLITE_ENABLE_RTREE=1")
 
 set(_srcs
