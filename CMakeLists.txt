@@ -10,6 +10,7 @@ if(WITH_SYSTEM_SQLITE)
   return()
 endif()
 
+include_directories(".")
 add_definitions("-DSQLITE_ENABLE_RTREE=1")
 
 set(_srcs
