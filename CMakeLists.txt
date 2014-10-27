@@ -39,3 +39,4 @@ if(UNIX AND NOT APPLE)
 endif()
 
 qi_stage_lib(sqlite3)
+qi_install_header(sqlite3.h)
