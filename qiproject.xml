@@ -1,1 +1,5 @@
-<project name="sqlite3" />
+<project version="3">
+  <qibuild name="sqlite3">
+    <depends buildtime="true" runtime="true" names="pthread dl" />
+  </qibuild>
+</project>
