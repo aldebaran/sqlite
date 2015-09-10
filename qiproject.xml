@@ -1,4 +1,5 @@
 <project version="3">
+  <license>Public domain</license>
   <qibuild name="sqlite3">
     <depends buildtime="true" runtime="true" names="pthread dl" />
   </qibuild>
